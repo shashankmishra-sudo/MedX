@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prescription Creation</title>
+    <!---Custom CSS File--->
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Prescription Creation</header>
+      
+        
+
+
+
+      <form action="/search" class="form" method="post">
+
+
+        <label id="findPateind">Enter phone number to find already registered patient</label>
+    
+        <div class="column">
+          <div class="input-box">
+          
+            <input  placeholder="Enter phone number...." name="FindUsingPhoneNumber" id="FindUsingPhoneNumberID"/>
+          </div>
+          <div class="input-box" method="post" action="/search">
+            <!-- <label>Age</label> -->
+            <button id="findBtn">Find Patient</button>
+            <!-- <button id="findBtn" placeholder="Find Patient" >    </button> -->
+          </div>
+        </div>
+
+
+      </form>
+
+      <form action="/" class="form" method="post">
+        
+        <label id="addnewp">Add New Patient</label>
+        <div class="Leble">
+          <label>Personal Details</label>
+          </div>
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" name="name"  />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" name="EmailAddress"  />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input  placeholder="Enter phone number" name="PhoneNumber"  />
+          </div>
+          <div class="input-box">
+            <label>Age</label>
+            <input  type="number" placeholder="Enter Your Age" name="Age"  />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" value="Male" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender"  value="Female"/>
+              <label for="check-female">Female</label>
+            </div>
+            
+          </div>
+        </div>
+       
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" name="Address1"  />
+          <!-- <input type="text" placeholder="Enter street address line 2" name="Address2"  /> -->
+          <div class="column">
+            <div class="select-box">
+              <select name="Country">
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" name="city" />
+          </div>
+          
+        </div>
+
+
+
+        <div class="Leble">
+            <label>Medical Information</label>
+        </div>
+        <!-- <div class="column">
+          <input type="number" placeholder="Weight" name="Weight"  />
+          <input type="number" placeholder="Body Temprature" name="BodyTemprature"  />
+        </div> -->
+        <div class="column">
+          <div class="input-box">
+            <label>Weight</label>
+            <input  placeholder="Weight" name="Weight"  />
+          </div>
+          <div class="input-box">
+            <label>Body Temprature</label>
+
+            <input  placeholder="Body Temprature" name="BodyTemprature"  />
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+              <label>Complaints</label>
+              <input  placeholder="Write Complaints Here" name="Complaints"  />
+            </div>
+            <div class="input-box">
+              <label>Allergies</label>
+
+              <input  placeholder="Write Allergies Here" name="Allergies"  />
+            </div>
+          </div>
+
+
+          <div class="Leble">
+            <label>Prescribed Medicines</label>
+        </div>
+        <input id="addbtn" placeholder="+Add Madicine">
+          <!-- <i class="fa-solid fa-plus"></i> -->
+          
+      </input>
+      
+        <!-- <div class="input-box address">
+            
+            
+            <div class="column">
+              <input type="text" placeholder="Madicine Name" name="MadicineName"  />
+              <input type="number" placeholder="Quantity" name="Quantity"  />
+            </div>
+
+
+
+            <div class="gender-box">
+                <h3>Consumption Time</h3>
+                <div class="gender-option">
+                  <div class="checkbox">
+                    <input type="checkbox" id="morning" name="consumptionTime" value="Morning"/>
+                    <label for="morning">Morning</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="afternoon" name="consumptionTime" value="Afternoon"/>
+                    <label for="afternoon">Afternoon</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="evening" name="consumptionTime" value="Evening" />
+                    <label for="evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+
+           
+            
+              
+              
+              
+              <label>Duration (Start Date & End Date)</label>
+              <div class="column">
+               
+                <input type="date" placeholder="Start Date" name="startDate"  />
+                
+                <input type="date" placeholder="End Date" name="endDate"  />
+              </div>
+
+              <div class="column">
+                             
+            
+                <input type="text" placeholder="Remark" name="remark"  />
+              </div>
+
+
+          </div> -->
+
+
+          <div id="main">
+
+          </div>
+
+        <button>Done</button>
+      </form>
+    </section>
+    
+    <script src="https://kit.fontawesome.com/fb8f8f1a16.js" crossorigin="anonymous"></script>
+    <script src="./style.js"></script>
+
+  </body>
+</html>
+
